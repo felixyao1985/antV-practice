@@ -112,9 +112,18 @@ function randomString(len) {
 
 /*
 秀逗了 后来发现AntV可以用辅助过滤区域。吐槽一下文档好乱
-	chart.guide().regionFilter({ // 绘制区域过滤
-	  start: [ 'min', 95 ],
-	  end: [ 'max', 'max' ],
-	  color: '#FF4D4F'
-	});
+
+如果引入的是 @antv/f2，那么默认不包含 Guide.RegionFilter，如您要使用这个辅助类，那么需要将其引入，方法如下：
+```
+
+import f2 from '@antv/f2/lib/index';
+require('@antv/f2/lib/component/guide/region-filter');
+
+chart.guide().regionFilter({ // 绘制区域过滤
+  start: [ 'min', 95 ],
+  end: [ 'max', 'max' ],
+  color: '#FF4D4F'
+});
+
+```
 */
