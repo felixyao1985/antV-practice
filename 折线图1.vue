@@ -108,3 +108,13 @@ function randomString(len) {
     chart.legend(false)
 
     chart.render();
+
+
+/*
+秀逗了 后来发现AntV可以用辅助过滤区域。吐槽一下文档好乱
+	chart.guide().regionFilter({ // 绘制区域过滤
+	  start: [ 'min', 95 ],
+	  end: [ 'max', 'max' ],
+	  color: '#FF4D4F'
+	});
+*/
