@@ -45,28 +45,31 @@
 	.sleep .sleep-label div span{
 		margin-top: 10px;
 	}
-	.sleep .sleep-data{
+	.sleep .sleep-data {
 		float: right;
 		height: 100%;
+		display: table;
 		width: calc(100% - 60px);
 	}
 	.sleep .sleep-state {
-		display: inline-block;
-		width: calc(100% / 720);
+		display: table-cell;
+	}
+	.sleep .sleep-state:after {
+		width: 100%;
 		height: 100px;
-		background-color: #FF6C72;
-		float: left;
 		position: relative;
 		top: 11px;
+		display: inline-block;
+		content: "";
 	}
-	.sleep .sleep-state.sleep-state2{
+	.sleep .sleep-state.sleep-state2:after{
 		background-color: #FF6C72;
 	 }
-	.sleep .sleep-state.sleep-state3{
+	.sleep .sleep-state.sleep-state3:after{
 		background-color: #83E6D7;
 		top: 111px;
 	 }
-	.sleep .sleep-state.sleep-state4{
+	.sleep .sleep-state.sleep-state4:after{
 		background-color: #2280FE;
 		top: 211px;
 	 }
